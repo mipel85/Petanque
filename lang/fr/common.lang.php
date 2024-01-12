@@ -107,7 +107,7 @@ $lang['rankings.loss']             = 'Défaites';
 $lang['rankings.points.for']       = 'Points pour';
 $lang['rankings.points.against']   = 'Points contre';
 
-$lang['standings.title'] = 'Classement du mois de ';
+$lang['standings.title'] = 'Classement du mois :de';
 
 $lang['footer']   = '&copy; PLSF :year --- Version 1.1';
 

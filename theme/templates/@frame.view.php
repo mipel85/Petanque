@@ -14,7 +14,6 @@ $currentDate = new DateTime();
 $currentYear = $currentDate->format('Y');
 if ($startYear == $currentYear) $year = $startYear;
 else $year = $startYear . ' - ' . $currentYear;
-
 ?>
 <!doctype html>
 <html lang="<?= Langs::get_locale() ?>">
