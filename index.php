@@ -4,7 +4,7 @@ use \App\Autoloader;
 use \App\controllers\Langs;
 
 
-require_once('./app/db/auth.php');
+require_once('./app/db/Auth.php');
 
 if (file_exists('./app/db/db_config.php')) {
 

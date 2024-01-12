@@ -15,7 +15,7 @@ if (!empty($_POST['username']) && !empty($_POST['password'])) {
 }
 
 // check if user is connected
-require_once('./app/db/auth.php');
+require_once('./app/db/Auth.php');
 if (is_connected()) {
     header('Location: ./index.php?page=home');
 }
