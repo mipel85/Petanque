@@ -29,7 +29,7 @@ usort($standings_list, 'standings_sort');
     <header class="section-header flex-between-center">
             <h1><?= Standings::month_label(Standings::get_month()) ?> - <?= Standings::get_year() ?></h1>
             <form action="" method="post">
-                <select name="month-choice" id="" onchange='this.form.submit()'>
+                <select class="select" name="month-choice" id="" onchange='this.form.submit()'>
                     <?php foreach (Standings::month_select() as $option): ?>
                         <?= $option ?>
                     <?php endforeach ?>
