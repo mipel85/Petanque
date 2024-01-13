@@ -14,11 +14,11 @@ if (isset($_POST['month-choice'])) {
 function standings_sort($a, $b)
 {
     if ($a["victory"] != $b["victory"]) {
-        return $b["victory"] - $a["victory"];
+        return $b["victory"] - $a["victory"]; // sort victory DESC
     } elseif ($a["pos_points"] != $b["pos_points"]) {
-        return $b["pos_points"] - $a["pos_points"];
+        return $b["pos_points"] - $a["pos_points"]; // then sort pos_points DESC
     } else {
-        return $a["neg_points"] - $b["neg_points"];
+        return $a["neg_points"] - $b["neg_points"]; // then sort neg_points ASC
     }
 }
 $standings_list = Standings::standings_list();
@@ -47,7 +47,11 @@ usort($standings_list, 'standings_sort');
                             <div class="row-item">
                                 <span id="rank-<?= $index + 1 ?>"><?= $index + 1 ?></span>
                                 <div class="player-name flex-main" id="<?= $player['member_id'] ?>"><?= $player['member_name'] ?></div>
-                                <div class="stamp full-notice"><?= $player['victory'] ?></div>
+                                <div
+                                        class="stamp full-notice"
+                                        data-percent="<?= round($player['victory'] / $player['played'] * 100, 2, PHP_ROUND_HALF_UP) ?>">
+                                    <?= $player['victory'] ?><!-- /<?= $player['played'] ?> -->
+                                </div>
                             </div>
                         <?php $i++ ?>
                         <?php if ($i === 22): ?> </div> <?php endif ?>

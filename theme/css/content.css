@@ -190,7 +190,7 @@
 }
 
 .row-group .row-item {
-    margin-bottom: 5px;
+    margin: 0 10px 5px 0;
 }
 
 .row-group .row-item span:first-child {
