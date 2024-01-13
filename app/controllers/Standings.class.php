@@ -59,7 +59,7 @@ class Standings
         $options = [];
         foreach ($dates as $value) {
             $date = explode('-', $value);
-            $selected = $_GET['date'] === $value ? ' selected' : '';
+            $selected = isset($_GET['date']) && $_GET['date'] === $value ? ' selected' : '';
             $options[] = '<option value="' . $value . '"' . $selected . '>' . $lang['month.' . $date[0]] . ' ' . $date[1] . '</option>';
         }
         return $options;
