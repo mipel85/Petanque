@@ -16,3 +16,10 @@ function force_user_connected() : void
         exit();
     }
 }
+
+function is_local()
+{
+    if (in_array($_SERVER['HTTP_HOST'], array('localhost', 'local.pbt')))
+        return true;
+    return false;
+}
