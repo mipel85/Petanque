@@ -178,3 +178,23 @@
 .rankings-table tbody tr:hover td {
     background-color: var(--bgc-notice);
 }
+
+#standings-table {
+    display: table;
+    margin: auto;
+}
+
+.row-group {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.row-group .row-item {
+    margin-bottom: 5px;
+}
+
+.row-group .row-item span:first-child {
+    width: 31px;
+    text-align: right;
+    padding-right: 10px;
+}

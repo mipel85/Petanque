@@ -111,7 +111,7 @@ caption {
 }
 
 th {
-	padding: 0.228em;
+	padding: 5px 10px;
 	font-size: 1.2em;
 	text-align: center;
 	font-weight: normal;
@@ -147,10 +147,19 @@ abbr {
 @media print {
 	* {
 		background-color: transparent;
+		border-color: transparent;
 		text-shadow: none;
 		box-shadow: none;
 		color: #000000;
 	}
+}
+
+.print * {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    color: #000000 !important;
 }
 
 /* --- animation effect ----------------------------------------------- */

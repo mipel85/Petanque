@@ -8,8 +8,10 @@ $lang['tooltip.standings'] = 'Classement mensuel';
 
 $lang['common.add']      = 'Ajouter';
 $lang['common.close']    = 'Fermer';
+$lang['common.print']    = 'Imprimer';
 $lang['common.edit']     = 'Modifier';
 $lang['common.submit']   = 'Valider';
+$lang['common.no.elements'] = 'Aucun élément disponible.';
 
 // Config
 $lang['admin.title']         = 'Administration';
