@@ -1,9 +1,8 @@
 <?php
 
 use \App\Autoloader;
-use \App\controllers\Langs;
-
-require_once('./app/db/Auth.php');
+use \App\core\Auth;
+use \App\core\Langs;
 
 if (file_exists('./app/db/db_config.php')) {
 
@@ -31,8 +30,8 @@ if (file_exists('./app/db/db_config.php')) {
         default            : $title = 'Erreur 404';
     }
 
-    if (!is_local())
-        force_user_connected();
+    if (!Auth::is_local())
+        Auth::force_user_connected();
 
     ob_start();
     foreach(Langs::get_lang_files() as $file) {

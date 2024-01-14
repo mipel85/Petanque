@@ -1,13 +1,12 @@
 <?php
 
-use \App\controllers\Langs;
 use \App\controllers\Menu;
 use \App\core\Debug;
+use \App\core\Auth;
+use \App\core\Langs;
 
 // Define username and password
 // echo password_hash('', PASSWORD_DEFAULT, ['cost' => 12]);
-
-require_once ('./app/db/Auth.php');
 
 $startYear = '2023';
 $currentDate = new DateTime();
@@ -56,10 +55,10 @@ else $year = $startYear . ' - ' . $currentYear;
                 </div>
             </div>
             <div id="header-links">
-                <a class="header-link" href="index.php?page=standings" data-tooltip="left" aria-label="<?= $lang['tooltip.standings'] ?>"><i class="fa fa-table"></i></a>
+                <a class="header-link" href="index.php?page=standings" data-tooltip="left" aria-label="<?= $lang['standings.menu.title'] ?>"><i class="fa fa-table"></i></a>
                 <a class="header-link" href="index.php?page=config" data-tooltip="left" aria-label="<?= $lang['admin.title'] ?>"><i class="fa fa-cog"></i></a>
-                <?php if (is_connected()): ?>
-                    <a class="header-link" href="./logout.php" data-tooltip="left" data-tooltip-width="150px" aria-label="<?= $lang['tooltip.logout'] ?>"><i class="fa fa-right-from-bracket"></i></a>
+                <?php if (Auth::is_connected()): ?>
+                    <a class="header-link" href="./logout.php" data-tooltip="left" data-tooltip-width="150px" aria-label="<?= $lang['auth.logout'] ?>"><i class="fa fa-right-from-bracket"></i></a>
                 <?php endif ?>
             </div>
         </header>

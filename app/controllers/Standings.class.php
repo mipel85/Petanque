@@ -5,9 +5,15 @@ namespace App\controllers;
 use \App\items\Days;
 use \App\items\Rankings;
 use \App\core\Debug;
+use \App\core\Langs;
 
 class Standings
-{
+{    
+    /**
+     * Monthly ranking list from all Days from the month
+     *
+     * @return array
+     */
     static function standings_list() : array
     {
         $days_list = [];
@@ -20,8 +26,13 @@ class Standings
         $standings_list = Rankings::rankings_month_list($days_list);
         return $standings_list;
     }
-
-    static function get_month()
+    
+    /**
+     * Get the current month or the month from url date param
+     *
+     * @return string
+     */
+    static function get_month() : string
     {
         if (!isset($_GET['date']) || $_GET['date'] === '') {
             $day = new \DateTime();
@@ -33,7 +44,12 @@ class Standings
         return $month;
     }
 
-    static function get_year()
+    /**
+     * Get the current year or the year from url date param
+     *
+     * @return string
+     */
+    static function get_year() : string
     {
         if (!isset($_GET['date']) || $_GET['date'] === '') {
             $day = new \DateTime();
@@ -44,7 +60,12 @@ class Standings
         }
         return $year;
     }
-
+    
+    /**
+     * Build the options for select from all Days date
+     *
+     * @return array
+     */
     static function month_select() : array
     {
         foreach(Langs::get_lang_files() as $file) {
@@ -64,8 +85,14 @@ class Standings
         }
         return $options;
     }
-
-    static function month_label(string $month) : string
+    
+    /**
+     * Build Standings h1 label ( for french )
+     *
+     * @param  string $month
+     * @return string
+     */
+    static function month_label($month) : string
     {
         foreach(Langs::get_lang_files() as $file) {
             include $file;

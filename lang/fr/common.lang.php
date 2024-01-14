@@ -3,15 +3,21 @@
 $lang['site.name']      = 'Pétanque Loisirs Sainte-Foy';
 $lang['site.logo']      = 'Logo Pétanque Loisirs Sainte-Foy';
 
-$lang['tooltip.logout']    = 'Se déconnecter';
-$lang['tooltip.standings'] = 'Classement mensuel';
+$lang['common.petanque']      = 'Pétanque';
+$lang['common.add']           = 'Ajouter';
+$lang['common.close']         = 'Fermer';
+$lang['common.print']         = 'Imprimer';
+$lang['common.edit']          = 'Modifier';
+$lang['common.submit']        = 'Valider';
+$lang['common.no.elements']   = 'Aucun élément disponible.';
 
-$lang['common.add']      = 'Ajouter';
-$lang['common.close']    = 'Fermer';
-$lang['common.print']    = 'Imprimer';
-$lang['common.edit']     = 'Modifier';
-$lang['common.submit']   = 'Valider';
-$lang['common.no.elements'] = 'Aucun élément disponible.';
+// Login/logout
+$lang['auth.logout'] = 'Se déconnecter';
+$lang['auth.connection'] = 'Se connecter';
+$lang['auth.connect.form'] = 'Formulaire de connexion';
+$lang['auth.required.inputs'] = 'Les champ marqués * sont obligatoires';
+$lang['auth.username'] = '* Nom d\'utilisateur';
+$lang['auth.password'] = '* Mot de passe';
 
 // Config
 $lang['admin.title']         = 'Administration';
@@ -110,6 +116,7 @@ $lang['rankings.points.for']       = 'Points pour';
 $lang['rankings.points.against']   = 'Points contre';
 
 $lang['standings.title'] = 'Classement du mois :de';
+$lang['standings.menu.title'] = 'Classement mensuel';
 
 $lang['footer']   = '&copy; PLSF :year --- Version 1.1';
 

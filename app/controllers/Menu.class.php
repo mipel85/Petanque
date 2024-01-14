@@ -2,6 +2,7 @@
 
 namespace App\controllers;
 
+use \App\core\Langs;
 use \App\items\Days;
 use \App\items\Members;
 use \App\items\Rounds;
