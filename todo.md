@@ -7,27 +7,27 @@
 - créer composant tooltip + mettre sur tous les icon-button
 
 ### Menu
-~~- design comme joueur : horizontal + border + radius ~~
+~~- design comme joueur : horizontal + border + radius ~~  
 
-~~- chaque item sur 2 lignes ~~
-    ~~- Accueil / date ~~
-    ~~- Joueurs présents / nombre de joueurs ~~
-    ~~- Gestion des parties / partie en cours ou label ~~
-    ~~- Saisie des scores / X matches terminés sur Y matches  ou label ~~
-    ~~- Classement / partie en cours ou label ~~
+~~- chaque item sur 2 lignes ~~  
+    ~~- Accueil / date ~~  
+    ~~- Joueurs présents / nombre de joueurs ~~  
+    ~~- Gestion des parties / partie en cours ou label ~~  
+    ~~- Saisie des scores / X matches terminés sur Y matches  ou label ~~  
+    ~~- Classement / partie en cours ou label ~~  
 
 ## Header
-~~- Bienvenue à la partie du date sous le titre ~~
-~~- n° de la partie ~~
+~~- Bienvenue à la partie du date sous le titre ~~  
+~~- n° de la partie ~~  
 
 ## Membres
-~~- déplacer la build des favoris sur la page sélection ~~
-~~- reload(true) sur décocher tout ~~
-~~- liste des sélection full page ~~
-~~- affichage de la liste des sélectionnés en popup sans id ~~
-~~- agir en ajax sur la liste des sélectionnés pour ne pas avoir à recharger la page ~~
-~~- pouvoir modifier le nom du membre ~~
-~~- revoir le tableau des membres dans la config member selection like ~~
+~~- déplacer la build des favoris sur la page sélection ~~  
+~~- reload(true) sur décocher tout ~~  
+~~- liste des sélection full page ~~  
+~~- affichage de la liste des sélectionnés en popup sans id ~~  
+~~- agir en ajax sur la liste des sélectionnés pour ne pas avoir à recharger la page ~~  
+~~- pouvoir modifier le nom du membre ~~  
+~~- revoir le tableau des membres dans la config member selection like ~~  
 
 ## Accueil
 créer la doc dans /theme/templates/home.php
