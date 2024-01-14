@@ -70,11 +70,13 @@ $players_number  = InitDays::players_number();
     <?php if($c_started_day): ?>
         <article id="rounds-list" class="tabs-container">
             <?php $day_round_list = array_reverse(Rounds::day_rounds_list($day_id)); ?>
-            <div class="tabs-menu">
-                <?php foreach($day_round_list as $round): ?>
-                    <?php $active_tab = InitDays::latest_round_id($day_id) == $round['id'] ? ' active-tab' : ''; ?>
-                    <span data-trigger="rounds-<?= $round['i_order'] ?>" class="tab-trigger<?= $active_tab ?>" onclick="openTab(event, 'rounds-<?= $round['i_order'] ?>');">Partie <?= $round['i_order'] ?></span>
-                <?php endforeach ?>
+            <div class="tabs-menu flex-between">
+                <div class="tabs-menu-left">
+                    <?php foreach($day_round_list as $round): ?>
+                        <?php $active_tab = InitDays::latest_round_id($day_id) == $round['id'] ? ' active-tab' : ''; ?>
+                        <span data-trigger="rounds-<?= $round['i_order'] ?>" class="tab-trigger<?= $active_tab ?>" onclick="openTab(event, 'rounds-<?= $round['i_order'] ?>');">Partie <?= $round['i_order'] ?></span>
+                    <?php endforeach ?>
+                </div>
             </div>
             <?php foreach($day_round_list as $round): ?>
                 <?php $active_tab = InitDays::latest_round_id($day_id) == $round['id'] ? ' active-tab' : ''; ?>

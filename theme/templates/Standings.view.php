@@ -14,11 +14,11 @@ if (isset($_POST['month-choice'])) {
 function standings_sort($a, $b)
 {
     if ($a["victory"] != $b["victory"]) {
-        return $b["victory"] - $a["victory"]; // sort victory DESC
+        return $b["victory"] - $a["victory"]; // sort by victory DESC
     } elseif ($a["pos_points"] != $b["pos_points"]) {
-        return $b["pos_points"] - $a["pos_points"]; // then sort pos_points DESC
+        return $b["pos_points"] - $a["pos_points"]; // then sort by pos_points DESC
     } else {
-        return $a["neg_points"] - $b["neg_points"]; // then sort neg_points ASC
+        return $a["neg_points"] - $b["neg_points"]; // then sort by neg_points ASC
     }
 }
 $standings_list = Standings::standings_list();
@@ -29,7 +29,7 @@ usort($standings_list, 'standings_sort');
     <section id="standings">
         <header class="section-header flex-between-center">
                 <h1 id="ranking-title"><?= Standings::month_label(Standings::get_month()) ?> - <?= Standings::get_year() ?></h1>
-                <button class="button" type="submit" onclick="print_content('#ranking-month')"><?= $lang['common.print'] ?></button>
+                <button class="button" type="submit" onclick="print_content()"><?= $lang['common.print'] ?></button>
                 <form id="form-month" action="" method="post">
                     <select class="select" name="month-choice" id="" onchange='this.form.submit()'>
                         <?php foreach (Standings::month_select() as $option): ?>
