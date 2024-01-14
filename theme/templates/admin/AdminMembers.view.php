@@ -10,7 +10,7 @@ use \App\items\Members;
         <div class="message-helper full-notice">
             <label><?= $lang['admin.members.add'] ?></label>
             <input type="text" id="add-member-name" class="input add-name" />
-            <button type="submit" id="add-member" class="button"><?= $lang['common.add'] ?></button>
+            <button type="submit" id="add-member" class="button full-notice"><?= $lang['common.add'] ?></button>
         </div>
     </header>
     <div id="registred-members-list" class="cell-flex cell-columns-5">
