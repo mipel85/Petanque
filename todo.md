@@ -137,12 +137,12 @@ suppression :
 ~~- afficher le plan des terrains un par un~~  
 
 ## Language
-code/front~config  
+code/front/config  
 ~~day/journée => la journée commence on la crée~~  
 ~~round/partie => de 1 à x parties dans une journée~~  
 ~~matches/rencontre => chaque rencontre entre 2 équipes dans une partie~~  
 ~~team/equipe => un groupe de 2 ou 3 participants~~  
-~~member/joueur~membre => un joueur en front, un membre dans la config~~  
+~~member/joueur-membre => un joueur en front, un membre dans la config~~  
 ~~player => un membre ayant au moins un score~~  
 ~~rankings/classement~~  
 
