@@ -137,7 +137,7 @@ suppression :
 ~~- afficher le plan des terrains un par un~~  
 
 ## Language
-code/front~config
+code/front~config  
 ~~day/journée => la journée commence on la crée~~  
 ~~round/partie => de 1 à x parties dans une journée~~  
 ~~matches/rencontre => chaque rencontre entre 2 équipes dans une partie~~  
