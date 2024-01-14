@@ -171,6 +171,6 @@ class Rounds {
                 }
             }
         }
-        return $rounds[0];
+        return end($rounds);
     }
 }
