@@ -65,6 +65,8 @@ else $year = $startYear . ' - ' . $currentYear;
         <main>
             <?= $content ?>
         </main>
-        <footer id="footer"><?= str_replace(':year', $year, $lang['footer']) ?></footer>
+        <footer id="footer">
+            <?= str_replace(':year', $year, $lang['footer']) ?>
+        </footer>
     </body>
 </html>

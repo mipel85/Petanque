@@ -187,10 +187,11 @@
 .row-group {
     display: inline-block;
     vertical-align: top;
+    padding: 0 20px;
 }
 
 .row-group .row-item {
-    margin: 0 10px 5px 0;
+    margin: 0 0 5px;
 }
 
 .row-group .row-item span:first-child {
