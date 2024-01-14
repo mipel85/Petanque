@@ -100,7 +100,6 @@ $lang['scores.help.colors']   = '
 $lang['scores.manual.edit']   = 'Renseigner le score manuellement';
 
 // Rankings
-
 $lang['rankings.title']   = 'Classement';
 
 $lang['rankings.no.days']      = 'Aucune journée créée.';
@@ -115,9 +114,13 @@ $lang['rankings.loss']             = 'Défaites';
 $lang['rankings.points.for']       = 'Points pour';
 $lang['rankings.points.against']   = 'Points contre';
 
+// Monthly rankings
 $lang['standings.title'] = 'Classement du mois :de';
 $lang['standings.menu.title'] = 'Classement mensuel';
 
+// Footer
 $lang['footer']   = '&copy; PLSF :year --- Version 1.1';
+
+
 
 ?>

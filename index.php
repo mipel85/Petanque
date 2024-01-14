@@ -3,6 +3,8 @@
 use \App\Autoloader;
 use \App\core\Auth;
 use \App\core\Langs;
+use \App\core\Debug;
+
 
 if (file_exists('./app/db/db_config.php')) {
 

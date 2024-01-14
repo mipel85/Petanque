@@ -21,8 +21,11 @@ function standings_sort($a, $b)
         return $a["neg_points"] - $b["neg_points"]; // then sort by neg_points ASC
     }
 }
-$standings_list = Standings::standings_list();
-usort($standings_list, 'standings_sort');
+
+if (count(Days::days_list()) > 0) {
+    $standings_list = Standings::standings_list();
+    usort($standings_list, 'standings_sort');
+}
 
 ?>
 <?php if (count(Days::days_list()) > 0): ?>
@@ -30,7 +33,7 @@ usort($standings_list, 'standings_sort');
         <header class="section-header flex-between-center">
                 <h1 id="ranking-title"><?= Standings::month_label(Standings::get_month()) ?> - <?= Standings::get_year() ?></h1>
                 <button class="button" type="submit" onclick="print_content()"><?= $lang['common.print'] ?></button>
-                <form id="form-month" action="" method="post">
+                <form id="form-month" action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                     <select class="select" name="month-choice" id="" onchange='this.form.submit()'>
                         <?php foreach (Standings::month_select() as $option): ?>
                             <?= $option ?>
