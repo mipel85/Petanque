@@ -144,7 +144,7 @@ code/front~config
 ~~team/equipe => un groupe de 2 ou 3 participants~~  
 ~~member/joueur~membre => un joueur en front, un membre dans la config~~  
 ~~player => un membre ayant au moins un score~~  
-~~rankings/classement
+~~rankings/classement~~  
 
 ## Idées
 - Revoir le logo  
