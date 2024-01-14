@@ -32,7 +32,7 @@ if (count(Days::days_list()) > 0) {
     <section id="standings">
         <header class="section-header flex-between-center">
                 <h1 id="ranking-title"><?= Standings::month_label(Standings::get_month()) ?> - <?= Standings::get_year() ?></h1>
-                <button class="button" type="submit" onclick="print_content()"><?= $lang['common.print'] ?></button>
+                <button id="print-button" class="button" type="submit" onclick="print_content(['#top-header', '#form-month', '#print-button', '#footer'])"><?= $lang['common.print'] ?></button>
                 <form id="form-month" action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                     <select class="select" name="month-choice" id="" onchange='this.form.submit()'>
                         <?php foreach (Standings::month_select() as $option): ?>
