@@ -120,7 +120,7 @@ class Rankings {
         $rankings_list = array();
         $req = 'SELECT * FROM ' . Config::get_config()->get('db_prefix') . 'rankings '
         . ' WHERE day_id = ' . $day_id
-        . ' ORDER BY victory DESC, pos_points DESC, neg_points DESC, member_name ASC';
+        . ' ORDER BY victory DESC, pos_points DESC, neg_points ASC, member_name ASC';
         if ($result = Connection::query($req)){
             if (!empty($result)){
                 foreach ($result as $value)
